@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class CicdApplication {
 
 	public static void main(String[] args) {
-                System.out.print("It really works!")	
+                System.out.print("It indeed works!")	
         	SpringApplication.run(CicdApplication.class, args);
 	}
 
