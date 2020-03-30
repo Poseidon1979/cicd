@@ -12,5 +12,5 @@ spec:
   source:
     git:
       url: https://github.com/Poseidon1979/cicd.git
-      revision: a74837bccedcc67d037ae880ecf4232f91830904
+      revision: 93e6cbd7b0f8d9629ddf4d40fb5c8330ce20acf8
       
