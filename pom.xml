@@ -49,10 +49,10 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+
 			<plugin>
 				<groupId>org.eclipse.jkube</groupId>
-				<artifactId>k8s-maven-plugin</artifactId> (4)
-				<version>1.0.0-alpha-1</version>
+				<artifactId>k8s-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
 	</build>
