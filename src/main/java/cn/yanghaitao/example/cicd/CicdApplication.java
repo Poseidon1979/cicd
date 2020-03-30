@@ -25,7 +25,9 @@ public class CicdApplication {
 	}
 
 	public static void main(String[] args) {
-                System.out.print("Hello World!!!");
+
+		    CicdApplication app = new CicdApplication();
+		    app.getServiceInfo();
         	SpringApplication.run(CicdApplication.class, args);
 	}
 
