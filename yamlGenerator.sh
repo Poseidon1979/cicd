@@ -6,8 +6,8 @@ fi
 
 rm ${JENKINS_HOME}/${JOB_NAME}_helm_charts/cicd_sample/templates/*.yaml
 
-declare image="www"
-#declare image=${client.docker.image}
+image="www"
+#image=${client.docker.image}
 
 
 sed "s/{{.Values.app.name}}/${JOB_NAME}/g" ${JENKINS_HOME}/helm_template/cicd_sample/templates/image.yaml | sed "s|{{.Values.app.image}}|${image}|g" | sed "s|{{.Values.git.url}}|${GIT_URL}|g" | sed "s/{{.Values.git.revision}}/${GIT_COMMIT}/g" >> ${JENKINS_HOME}/${JOB_NAME}_helm_charts/cicd_sample/templates/${JOB_NAME}-image.yaml
