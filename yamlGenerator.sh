@@ -6,6 +6,8 @@ fi
 
 rm ${JENKINS_HOME}/${JOB_NAME}_helm_charts/cicd_sample/templates/*.yaml
 
+env
+
 image="www"
 #image=${client.docker.image}
 
