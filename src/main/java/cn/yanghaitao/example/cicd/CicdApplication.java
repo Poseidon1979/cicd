@@ -19,7 +19,7 @@ public class CicdApplication {
 
 	private void getServiceInfo()
 	{
-           List<ServiceInstance> instanceList = discoveryClient.getInstances("kubernetes");
+           List<ServiceInstance> instanceList = discoveryClient.getInstances("kubernetes.default");
            ServiceInstance instance = instanceList.get(0);
            System.out.println("the instance name is:" + instance.getUri());
 	}
