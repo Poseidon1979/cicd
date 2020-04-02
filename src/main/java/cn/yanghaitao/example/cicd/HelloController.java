@@ -25,7 +25,7 @@ public class HelloController {
 
     @RequestMapping("/services")
     public List<String> services() {
-        return this.discoveryClient.getServices();
+        return this.discoveryClient.getInstances("kubernetes.default");
     }
 
 }
