@@ -13,22 +13,8 @@ import java.util.List;
 @EnableDiscoveryClient
 public class CicdApplication {
 
-	@Autowired
-	private DiscoveryClient discoveryClient;
-
-
-	private void getServiceInfo()
-	{
-           List<ServiceInstance> instanceList = discoveryClient.getInstances("kubernetes.default");
-           ServiceInstance instance = instanceList.get(0);
-           System.out.println("The instance name is:" + instance.getUri());
-
-	}
-
 	public static void main(String[] args) {
 
-		    CicdApplication app = new CicdApplication();
-		    app.getServiceInfo();
         	SpringApplication.run(CicdApplication.class, args);
 	}
 
