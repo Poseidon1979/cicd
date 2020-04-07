@@ -1,5 +1,6 @@
 package cn.yanghaitao.example.cicd;
 
+import java.lang.annotation.Repeatable;
 import java.util.List;
 
 import org.apache.commons.logging.Log;
@@ -25,7 +26,7 @@ public class HelloController {
 
     @RequestMapping("/services")
     public String services() {
-        return this.discoveryClient.getServices().toString();
+        return this.discoveryClient.getInstances("kubernetes-dashboard").get(0).getUri().toString();
     }
 
 }
