@@ -25,7 +25,7 @@ public class HelloController {
 
     @RequestMapping("/services")
     public String services() {
-        return this.discoveryClient.description();
+        return this.discoveryClient.getServices().toString();
     }
 
 }
